@@ -28,7 +28,7 @@ ul {
       margin-top: 20px;
   }
 .container {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 img {
@@ -36,4 +36,15 @@ img {
   flex-basis: 40%;
   float: right;
   margin-right: 200px;
+}
+.footer{
+  flex-basis: 100%;
+  margin-left: 20;
+}
+.container-flex{
+  margin-left: 10px;
+}
+
+.card{
+  margin-left: 10px;
 }
