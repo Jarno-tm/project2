@@ -1,42 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" href="Images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ervaring.css">
+    <link rel="stylesheet" href="css/footers.css">
+    <link rel="stylesheet" href="css/icon.css">
 </head>
+
 <body>
-    <h1>Contact</h1>
-    <p>Als u mij wilt contacteren gebruik dan volgend e-mailadres:</p>
-    <p>Mijn e-mailadres: <a href="mailto:r0888648@student.thomasmore.be">r0888648@student.thomasmore.be</a></p>
-    <form action="" method="GET">
-        <div>
-            <label for="voornaam">Voornaam:</label>
-            <input type="text" name="voornaam" id="voornaam">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Start</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cv.html" target="_blank">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ervaring.html" target="_blank">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hobby.html" target="_blank">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <label for="familienaam">Familienaam:</label>
-            <input type="text" name="familienaam" id="familienaam">
-        </div>
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="vraag">Vraag
-                <textarea name="vraag" id="vraag" rows="10"></textarea>
-            </label>
-        </div>
-    </form>
-    <h3>Navigatielijst</h3>
-    <ul>
-        <li><a href="index.html" target="_blank">Start</a></li>
-        <li><a href="cv.html" target="_blank">Curriculum Vitae</a></li>
-        <li><a href="ervaring.html" target="_blank">Ervaring</a></li>
-        <li><a href="hobby.html" target="_blank">Hobby's/Interesses</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-    </ul>
+    </nav>
+
+    <div class="container col-md-8">
+        <h1>Contactpagina</h1>
+        <h4>U kunt mij contacteren via volgende links of het contactformulier hieronder.</h4>
+        <a href="https://www.facebook.com/jarno.dumont.96/" target="_blank"><i class="bi bi-facebook"></a></i>
+        <a href="https://www.linkedin.com/in/jarno-dumont-297013188/" target="_blank"><i class="bi bi-linkedin"></a></i>
+        <a href="https://github.com/Jarno-tm" target="_blank"><i class="bi bi-github"></a></i></li>
+
+        <form action="#">
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-md">
+                        <label for="voornaam" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="voornaam" name="voornaam" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="familienaam" class="form-label">Familienaam</label>
+                        <input type="text" class="form-control" id="familienaam" name="familienaam" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+                            <label for="validationServerUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                              <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputSkills" class="form-label">Skills</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Kies een van deze skills</option>
+                            <option value="1">HTML</option>
+                            <option value="2">CSS</option>
+                            <option value="3">Bootstrap</option>
+                            <option value="3">C#</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="InputText" class="form-label">Vraag</label>
+                <input type="text" class="form-control" id="InputText" aria-describedby="Text">
+            </div>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Submit</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="container">
+        <p>Jarno Dumont</p>
+        <p>Graduaat Programmeren | Thomas More Lier</p>
+    </div>
+    <div class="container-flex">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="text-muted">&copy; Dumont Jarno</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a href="https://github.com/Jarno-tm" target="_blank"><i class="bi bi-github"></a></i>
+                </li>
+                <li class="ms-3"><a href="https://www.linkedin.com/in/jarno-dumont-297013188/" target="_blank"><i
+                            class="bi bi-linkedin"></a></i></li>
+                <li class="ms-3"><a href="https://www.facebook.com/jarno.dumont.96/" target="_blank"><i
+                            class="bi bi-facebook"></a></i></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
